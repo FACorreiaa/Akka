@@ -7,6 +7,7 @@ import akka.actor.UntypedAbstractActor;
 import akka.routing.RoundRobinPool;
 import com.typesafe.config.ConfigFactory;
 
+import java.util.Scanner;
 import java.util.concurrent.CountDownLatch;
 
 public class Pi {
@@ -16,9 +17,24 @@ public class Pi {
 
     public static void main(String[] args) throws InterruptedException {
         Pi pi = new Pi();
-        int numStepsPerComp = 1000;
-        int numJobs = 100000;
-        final int MAX_ACT = 16;
+
+        Scanner scannerObj = new Scanner(System.in);
+
+        System.out.print("Informe a quantidade de iterações a calcular: ");
+        int numJobs = scannerObj.nextInt();
+        System.out.println("Nº Iterações : " + numJobs);
+
+        System.out.print("Informe a quantidade de atores: ");
+        int MAX_ACT = scannerObj.nextInt();
+        System.out.println("Nº workers : " + MAX_ACT);
+
+        System.out.print("Informe a quantidade de ciclos: ");
+        int numStepsPerComp = scannerObj.nextInt();
+        System.out.println("Nº Mensagens : " + numStepsPerComp);
+
+        //int numStepsPerComp = 1000;
+        //int numJobs = 100000;
+        //final int MAX_ACT = 16;
         String results[] = new String[MAX_ACT];
 
         for (int numActors = 1; numActors <= MAX_ACT; numActors++) {

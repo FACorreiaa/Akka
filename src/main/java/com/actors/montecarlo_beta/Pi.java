@@ -32,9 +32,7 @@ public class Pi {
         int numWorkers = scannerObj.nextInt();
         System.out.println("Nº workers : " + numWorkers);
 
-        System.out.print("Informe a quantidade de mensagens: ");
-        int numMessages = scannerObj.nextInt();
-        System.out.println("Nº Mensagens : " + numMessages);
+
         //final int MAX_ACT = 16;
         String results[] = new String[numWorkers];
 
@@ -42,7 +40,7 @@ public class Pi {
             timSum = 0;
             for (int i = 0; i < 30; i++) {
                 latch = new CountDownLatch(1);
-                pi.calculate(numWorkers, numMessages, numeroPontos);
+                pi.calculate(numWorkers, numeroPontos);
                 latch.await();
                 if ( i == 20 ) { // take last 10 samples only
                     timSum = 0;
@@ -139,12 +137,10 @@ public class Pi {
 
         public Master(
                 final int nrOfWorkers,
-                int nrOfMessages,
                 int numeroPontos,
                 ActorRef listener) {
 
             this.nrOfWorkers = nrOfWorkers;
-            this.nrOfMessages = nrOfMessages;
             this.numeroPontos = numeroPontos;
             this.listener = listener;
 
@@ -193,8 +189,7 @@ public class Pi {
 
     public void calculate(
             final int nrOfWorkers,
-            final int numeroPontos,
-            final int nrOfMessages) {
+            final int numeroPontos) {
 
 
         // Create an Akka system
@@ -225,7 +220,7 @@ public class Pi {
         ActorRef listener = system.actorOf(Props.create(Listener.class), "listener");
 
         // create the master
-        ActorRef master = system.actorOf(Props.create(Master.class, nrOfWorkers, nrOfMessages, numeroPontos, listener), "master");
+        ActorRef master = system.actorOf(Props.create(Master.class, nrOfWorkers, numeroPontos, listener), "master");
 
 
         // start the calculation
