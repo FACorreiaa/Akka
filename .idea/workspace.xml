@@ -2,18 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6dc1cbd-6f82-4382-bd31-ea512ca831b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Pi.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Threads" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Master.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi$1getMaster.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Actors/Listener.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Actors/Master.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Actors/Worker.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Messages/PiMessages.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Pi.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Actors/Listener$$anonfun$receive$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Actors/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Actors/Master$$anonfun$receive$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Actors/Master.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Actors/Worker$$anonfun$receive$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Actors/Worker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Messages/Calculate$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Messages/Calculate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Messages/PiApproximation$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Messages/PiApproximation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Messages/PiMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Messages/Result$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Messages/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Messages/Work$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Messages/Work.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pi$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pi$delayedInit$body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Pi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Master.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi$Calculate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi$Calculate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi$PiApproximation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi$PiApproximation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi$Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi$Result.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi$Work.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi$Work.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Pi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/leibniz/Worker.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,110 +54,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Listener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/Dart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Master.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="32" />
+            <state relative-caret-position="825">
+              <caret line="58" column="34" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1682#1683#0" expanded="true" />
-                <element signature="e#1718#1719#0" expanded="true" />
-                <element signature="e#1758#1759#0" expanded="true" />
-                <element signature="e#1801#1802#0" expanded="true" />
-                <element signature="e#1909#1910#0" expanded="true" />
-                <element signature="e#1951#1952#0" expanded="true" />
-                <element signature="e#1987#1988#0" expanded="true" />
-                <element signature="e#2023#2024#0" expanded="true" />
-                <element signature="e#2302#2303#0" expanded="true" />
-                <element signature="e#2335#2336#0" expanded="true" />
-                <element signature="e#2372#2373#0" expanded="true" />
-                <element signature="e#2411#2412#0" expanded="true" />
+                <element signature="e#1576#1577#0" expanded="true" />
+                <element signature="e#1612#1613#0" expanded="true" />
+                <element signature="e#1652#1653#0" expanded="true" />
+                <element signature="e#1695#1696#0" expanded="true" />
+                <element signature="e#1803#1804#0" expanded="true" />
+                <element signature="e#1845#1846#0" expanded="true" />
+                <element signature="e#1881#1882#0" expanded="true" />
+                <element signature="e#1917#1918#0" expanded="true" />
+                <element signature="e#2196#2197#0" expanded="true" />
+                <element signature="e#2229#2230#0" expanded="true" />
+                <element signature="e#2266#2267#0" expanded="true" />
+                <element signature="e#2305#2306#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Pi.scala">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo_beta/Pi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="233">
+              <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
+                <element signature="e#1575#1576#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Actors/Listener.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Pi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Messages/PiMessages.scala">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Worker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#616#617#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -139,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/ThrowDarts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="132">
               <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -161,18 +125,24 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>onReceiveAverage</find>
-      <find>onReceive</find>
       <find>World</find>
       <find>Data</find>
       <find>Worker</find>
       <find>Gregory</find>
       <find>approximatePi</find>
       <find>Calculate</find>
-      <find>getSelf</find>
       <find>PiApproximation</find>
       <find>getClass</find>
       <find>getMas</find>
       <find>static void main</find>
+      <find>getSelf</find>
+      <find>GetPi</find>
+      <find>numJobs</find>
+      <find>onReceive</find>
+      <find>nrOfMessages</find>
+      <find>Work</find>
+      <find>getNrOfElements</find>
+      <find>calculate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,9 +171,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/actors/montecarlo/montecarlo/Dart.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2/Dart.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Pi.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Worker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Listener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Pi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/actors/montecarlo_beta/Pi.java" />
       </list>
     </option>
   </component>
@@ -225,33 +197,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/app.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_akka_akka_testkit_2_12_2_6_0_M4.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_java8_compat_2_12_0_8_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_akka_akka_actor_2_12_2_5_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_config_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_12_6.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_41.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_41.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_41.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_41.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_1_3_41.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_common_1_3_41.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
     <option name="width" value="1935" />
     <option name="height" value="1038" />
   </component>
@@ -304,6 +251,24 @@
               <item name="actors" type="462c0819:PsiDirectoryNode" />
               <item name="leibniz" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="actors" type="462c0819:PsiDirectoryNode" />
+              <item name="montecarlo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="actors" type="462c0819:PsiDirectoryNode" />
+              <item name="montecarlo_beta" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -312,6 +277,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -322,6 +288,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Fernando\Documents\Mestrado Engenharia Informática\PCD\Atores\src\main\java\com\actors\leibniz_v2" />
       <recent name="C:\Users\Fernando\Documents\Mestrado Engenharia Informática\PCD\Atores\src\main\java\com\actors\montecarlo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.actors.montecarlo_beta" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Fernando\Documents\Mestrado Engenharia Informática\PCD\Atores\src\main\java" />
@@ -340,14 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Pi">
-    <configuration name="AkkaQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lightbend.akka.sample.AkkaQuickstart" />
-      <module name="app" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.actors.montecarlo.Main" />
       <module name="app" />
@@ -364,6 +326,20 @@
     </configuration>
     <configuration name="Pi (1)" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Pi" />
+      <module name="app" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pi (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.actors.montecarlo_beta.Pi" />
+      <module name="app" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.actors.leibniz_BETA.Pi" />
       <module name="app" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -386,11 +362,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Pi (2)" />
+        <item itemvalue="Application.Pi (2)" />
         <item itemvalue="Application.Pi" />
         <item itemvalue="Application.Pi (1)" />
-        <item itemvalue="Scala Console.Scala Console" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.AkkaQuickstart" />
       </list>
     </recent_temporary>
   </component>
@@ -398,23 +374,23 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1548" height="830" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4957627" visible="true" weight="0.26238286" />
-      <window_info id="Structure" order="1" sideWeight="0.5042373" side_tool="true" visible="true" weight="0.26238286" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49375" visible="true" weight="0.2620321" />
+      <window_info id="Structure" order="1" sideWeight="0.50625" side_tool="true" visible="true" weight="0.2620321" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328125" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32859176" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32489452" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.33238637" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3305204" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -502,16 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/ThrowDarts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Actors/Listener.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -532,55 +498,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Master.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="26" column="25" selection-start-line="26" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Pi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/ThrowDarts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="825">
+          <caret line="58" column="34" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1682#1683#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
-            <element signature="e#1758#1759#0" expanded="true" />
-            <element signature="e#1801#1802#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="e#1987#1988#0" expanded="true" />
-            <element signature="e#2023#2024#0" expanded="true" />
-            <element signature="e#2302#2303#0" expanded="true" />
-            <element signature="e#2335#2336#0" expanded="true" />
-            <element signature="e#2372#2373#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
+            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1845#1846#0" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#2196#2197#0" expanded="true" />
+            <element signature="e#2229#2230#0" expanded="true" />
+            <element signature="e#2266#2267#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Master.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo_beta/Pi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="48" />
+        <state relative-caret-position="233">
+          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,9 +1,6 @@
-package com.actors.leibniz;
+package com.actors.leibniz_BETA;
 
 import akka.actor.UntypedAbstractActor;
-import akka.actor.UntypedActor;
-
-import static com.actors.montecarlo.Main.DARTS_PER_ACTOR;
 
 public class Listener extends UntypedAbstractActor {
     public void onReceive(Object message) {

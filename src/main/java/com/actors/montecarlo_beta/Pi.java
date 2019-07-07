@@ -1,4 +1,4 @@
-package com.actors.leibniz;
+package com.actors.montecarlo_beta;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
@@ -7,25 +7,42 @@ import akka.actor.UntypedAbstractActor;
 import akka.routing.RoundRobinPool;
 import com.typesafe.config.ConfigFactory;
 
+import java.util.Scanner;
 import java.util.concurrent.CountDownLatch;
 
 public class Pi {
 
     static volatile CountDownLatch latch;
     static long timSum = 0;
+    public static double x = 0;
+    public static double y = 0;
+    public static int nSuccess = 0;
 
     public static void main(String[] args) throws InterruptedException {
         Pi pi = new Pi();
-        int numStepsPerComp = 1000;
-        int numJobs = 100000;
-        final int MAX_ACT = 16;
-        String results[] = new String[MAX_ACT];
+        //int numStepsPerComp = 1000;
+        //int numJobs = 100000;
+        Scanner scannerObj = new Scanner(System.in);
 
-        for (int numActors = 1; numActors <= MAX_ACT; numActors++) {
+        System.out.print("Informe a quantidade de iterações a calcular: ");
+        int numeroPontos = scannerObj.nextInt();
+        System.out.println("Nº Iterações : " + numeroPontos);
+
+        System.out.print("Informe a quantidade de workers: ");
+        int numWorkers = scannerObj.nextInt();
+        System.out.println("Nº workers : " + numWorkers);
+
+        System.out.print("Informe a quantidade de mensagens: ");
+        int numMessages = scannerObj.nextInt();
+        System.out.println("Nº Mensagens : " + numMessages);
+        //final int MAX_ACT = 16;
+        String results[] = new String[numWorkers];
+
+        for (int numActors = 1; numActors <= numWorkers; numActors++) {
             timSum = 0;
             for (int i = 0; i < 30; i++) {
                 latch = new CountDownLatch(1);
-                pi.calculate(numActors, numStepsPerComp, numJobs);
+                pi.calculate(numWorkers, numMessages, numeroPontos);
                 latch.await();
                 if ( i == 20 ) { // take last 10 samples only
                     timSum = 0;
@@ -44,21 +61,16 @@ public class Pi {
     }
 
     static class Work {
-        private final int start;
-        private final int nrOfElements;
+        private final int numeroPontos;
 
-        public Work(int start, int nrOfElements) {
-            this.start = start;
-            this.nrOfElements = nrOfElements;
+        public Work(int numeroPontos) {
+            this.numeroPontos = numeroPontos;
         }
 
-        public int getStart() {
-            return start;
+        public int getNumeroPontos() {
+            return numeroPontos;
         }
 
-        public int getNrOfElements() {
-            return nrOfElements;
-        }
     }
 
     static class Result {
@@ -93,18 +105,20 @@ public class Pi {
 
     public static class Worker extends UntypedAbstractActor {
 
-        private double calculatePiFor(int start, int nrOfElements) {
-            double acc = 0.0;
-            for (int i = start * nrOfElements; i <= ((start + 1) * nrOfElements - 1); i++) {
-                acc += 4.0 * (1 - (i % 2) * 2) / (2 * i + 1);
+        private double calculatePiFor(long numeroPontos) {
+            for (long i = 1; i <= numeroPontos; i++) {
+                x = Math.random();
+                y = Math.random();
+                if (x * x + y * y <= 1)
+                    nSuccess++;
             }
-            return acc;
+            return (4.0 * nSuccess / numeroPontos);
         }
 
         public void onReceive(Object message) {
             if (message instanceof Work) {
                 Work work = (Work) message;
-                double result = calculatePiFor(work.getStart(), work.getNrOfElements());
+                double result = calculatePiFor(work.getNumeroPontos());
                 getSender().tell(new Result(result), getSelf());
             } else {
                 unhandled(message);
@@ -113,9 +127,9 @@ public class Pi {
     }
 
     public static class Master extends UntypedAbstractActor {
-        private final int nrOfMessages;
-        private final int nrOfElements;
-
+        private int numeroPontos;
+        private int nrOfMessages;
+        private int nrOfWorkers;
         private double pi;
         private int nrOfResults;
         private final long start = System.nanoTime();
@@ -126,29 +140,28 @@ public class Pi {
         public Master(
                 final int nrOfWorkers,
                 int nrOfMessages,
-                int nrOfElements,
+                int numeroPontos,
                 ActorRef listener) {
 
+            this.nrOfWorkers = nrOfWorkers;
             this.nrOfMessages = nrOfMessages;
-            this.nrOfElements = nrOfElements;
+            this.numeroPontos = numeroPontos;
             this.listener = listener;
 
-            /*workerRouter = this.getContext().actorOf(new Props(Worker.class).withRouter(
-                    new RoundRobinRouter(nrOfWorkers)), "workerRouter");*/
             workerRouter = this.getContext().actorOf(new RoundRobinPool(nrOfWorkers).props(Props.create(Worker.class)), "workerRouter");
 
         }
 
         public void onReceive(Object message) {
             if (message instanceof Calculate) {
-                for (int start = 0; start < nrOfMessages; start++) {
-                    workerRouter.tell(new Work(start, nrOfElements), getSelf());
+                for (int i = 0; i < numeroPontos; i++) {
+                    workerRouter.tell(new Work(numeroPontos), getSelf());
                 }
             } else if (message instanceof Result) {
                 Result result = (Result) message;
                 pi += result.getValue();
                 nrOfResults += 1;
-                if (nrOfResults == nrOfMessages) {
+                if (nrOfResults == numeroPontos) {
                     // Send the result to the listener
                     long duration = System.nanoTime() - start;
                     listener.tell(new PiApproximation(pi, duration), getSelf());
@@ -180,7 +193,7 @@ public class Pi {
 
     public void calculate(
             final int nrOfWorkers,
-            final int nrOfElements,
+            final int numeroPontos,
             final int nrOfMessages) {
 
 
@@ -212,7 +225,7 @@ public class Pi {
         ActorRef listener = system.actorOf(Props.create(Listener.class), "listener");
 
         // create the master
-        ActorRef master = system.actorOf(Props.create(Master.class, nrOfWorkers, nrOfMessages, nrOfElements, listener), "master");
+        ActorRef master = system.actorOf(Props.create(Master.class, nrOfWorkers, nrOfMessages, numeroPontos, listener), "master");
 
 
         // start the calculation

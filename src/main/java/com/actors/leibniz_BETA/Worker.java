@@ -1,4 +1,4 @@
-package com.actors.leibniz;
+package com.actors.leibniz_BETA;
 
 import akka.actor.UntypedAbstractActor;
 

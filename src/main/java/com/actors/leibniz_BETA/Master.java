@@ -1,14 +1,9 @@
-package com.actors.leibniz;
+package com.actors.leibniz_BETA;
 
 import akka.actor.ActorRef;
 import akka.actor.Props;
 import akka.actor.UntypedAbstractActor;
-import akka.actor.UntypedActor;
-import akka.routing.ActorRefRoutee;
 import akka.routing.RoundRobinPool;
-import javafx.util.Duration;
-
-import java.util.concurrent.TimeUnit;
 
 public class Master extends UntypedAbstractActor {
 
