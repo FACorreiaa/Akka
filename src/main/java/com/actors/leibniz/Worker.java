@@ -1,8 +1,8 @@
 package com.actors.leibniz;
 
-import akka.actor.UntypedActor;
+import akka.actor.UntypedAbstractActor;
 
-public class Worker extends UntypedActor {
+public class Worker extends UntypedAbstractActor {
 
     /*static BigDecimal ONE = new BigDecimal(1);
     static BigDecimal TWO = new BigDecimal(2);

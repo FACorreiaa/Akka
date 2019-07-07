@@ -24,13 +24,7 @@ public class Pi {
         //final ActorRef listener = system.actorOf(new Props(Listener.class), "listener");
         ActorRef listener = system.actorOf(Props.create(Listener.class), "listener");
 
-        class getMaster {
-            Master m = new Master(nrOfWorkers, nrOfMessages, nrOfElements, listener);
-        }
-
-
-        // create the master
-        ActorRef master = system.actorOf(Props.create(getMaster.class), "master");
+        ActorRef master = system.actorOf(Props.create(Master.class, nrOfWorkers, nrOfMessages, nrOfElements, listener), "master");
 
         /*ActorRef master = system.actorOf(new Props(new UntypedActorFactory() {
             public UntypedAbstractActor create() {
@@ -39,7 +33,7 @@ public class Pi {
         }), "master");*/
 
         // start the calculation
-        master.tell(0, getClass()) ;
+        master.tell(new Calculate(), ActorRef.noSender());
     }
 
 
