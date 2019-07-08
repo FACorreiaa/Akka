@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6dc1cbd-6f82-4382-bd31-ea512ca831b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Threads" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/actors/montecarlo_beta/Pi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/actors/montecarlo_beta/Pi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Calculate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Calculate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Master.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Master.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$PiApproximation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$PiApproximation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Work.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Work.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi$Worker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/actors/montecarlo_beta/Pi.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,22 +29,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="31">
+              <caret line="32" column="64" selection-start-line="30" selection-start-column="8" selection-end-line="32" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
-                <element signature="e#1612#1613#0" expanded="true" />
-                <element signature="e#1652#1653#0" expanded="true" />
-                <element signature="e#1695#1696#0" expanded="true" />
-                <element signature="e#1803#1804#0" expanded="true" />
-                <element signature="e#1845#1846#0" expanded="true" />
-                <element signature="e#1881#1882#0" expanded="true" />
-                <element signature="e#1917#1918#0" expanded="true" />
-                <element signature="e#2196#2197#0" expanded="true" />
-                <element signature="e#2229#2230#0" expanded="true" />
-                <element signature="e#2266#2267#0" expanded="true" />
-                <element signature="e#2305#2306#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,33 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo_beta/Pi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#1519#1520#0" expanded="true" />
-                <element signature="e#1575#1576#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Pi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/ThrowDarts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-2319">
+              <caret line="69" column="11" lean-forward="true" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -104,10 +74,12 @@
       <find>GetPi</find>
       <find>numJobs</find>
       <find>onReceive</find>
-      <find>nrOfMessages</find>
       <find>Work</find>
-      <find>calculate</find>
       <find>getNrOfElements</find>
+      <find>x</find>
+      <find>Master</find>
+      <find>calculate</find>
+      <find>nrOfMessages</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,8 +134,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
     <option name="width" value="1935" />
     <option name="height" value="1038" />
   </component>
@@ -179,29 +151,29 @@
           <expand>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -209,7 +181,7 @@
             </path>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -218,7 +190,7 @@
             </path>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -227,7 +199,7 @@
             </path>
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Atores" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -247,7 +219,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.settings.ScalaProjectSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -289,15 +261,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pi (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Pi" />
+    <configuration name="Pi (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.actors.montecarlo_beta.Pi" />
       <module name="app" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pi (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.actors.montecarlo_beta.Pi" />
+    <configuration name="Pi (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.actors.leibniz.Pi" />
       <module name="app" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -328,10 +300,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Pi (2)" />
+        <item itemvalue="Application.Pi (3)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Pi (2)" />
         <item itemvalue="Application.Pi" />
-        <item itemvalue="Application.Pi (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -339,22 +311,23 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49375" visible="true" weight="0.2620321" />
-      <window_info id="Structure" order="1" sideWeight="0.50625" side_tool="true" visible="true" weight="0.2620321" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49086162" visible="true" weight="0.26596606" />
+      <window_info id="Structure" order="1" sideWeight="0.5091384" side_tool="true" visible="true" weight="0.26596606" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328125" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32489452" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" visible="true" weight="0.32332155" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3305204" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5004042" side_tool="true" visible="true" weight="0.32332155" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3303887" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -375,60 +348,19 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/montecarlo/Main.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/montecarlo/Point.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/montecarlo/ThrowDarts.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/montecarlo/Dart.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2/Main.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2/ThrowDarts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2/Dart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/montecarlo/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/montecarlo/Point.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/montecarlo/ThrowDarts.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/montecarlo/Dart.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V2.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2/Point.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2/ThrowDarts.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_v2/Dart.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -442,26 +374,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Actors/Listener.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Messages/PiMessages.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Pi.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Actors/Listener.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Messages/PiMessages.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_V3/Pi.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -486,16 +401,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Pi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/ThrowDarts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="196">
           <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -503,36 +411,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz_BETA/Pi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="21" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/leibniz/Pi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state relative-caret-position="31">
+          <caret line="32" column="64" selection-start-line="30" selection-start-column="8" selection-end-line="32" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-            <element signature="e#1612#1613#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1845#1846#0" expanded="true" />
-            <element signature="e#1881#1882#0" expanded="true" />
-            <element signature="e#1917#1918#0" expanded="true" />
-            <element signature="e#2196#2197#0" expanded="true" />
-            <element signature="e#2229#2230#0" expanded="true" />
-            <element signature="e#2266#2267#0" expanded="true" />
-            <element signature="e#2305#2306#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/actors/montecarlo_beta/Pi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2319">
+          <caret line="69" column="11" lean-forward="true" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
         </state>
       </provider>
     </entry>

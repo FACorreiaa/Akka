@@ -32,6 +32,10 @@ public class Pi {
         int numWorkers = scannerObj.nextInt();
         System.out.println("Nº workers : " + numWorkers);
 
+        System.out.print("Informe a quantidade de ciclos: ");
+        int nrOfMessages = scannerObj.nextInt();
+        System.out.println("Nº Mensagens : " + nrOfMessages);
+
 
         //final int MAX_ACT = 16;
         String results[] = new String[numWorkers];
@@ -40,7 +44,7 @@ public class Pi {
             timSum = 0;
             for (int i = 0; i < 30; i++) {
                 latch = new CountDownLatch(1);
-                pi.calculate(numWorkers, numeroPontos);
+                pi.calculate(numWorkers, nrOfMessages, numeroPontos);
                 latch.await();
                 if ( i == 20 ) { // take last 10 samples only
                     timSum = 0;
@@ -61,6 +65,9 @@ public class Pi {
     static class Work {
         private final int numeroPontos;
 
+        /**
+         * @param numeroPontos
+         */
         public Work(int numeroPontos) {
             this.numeroPontos = numeroPontos;
         }
@@ -104,12 +111,14 @@ public class Pi {
     public static class Worker extends UntypedAbstractActor {
 
         private double calculatePiFor(long numeroPontos) {
+            System.out.println(numeroPontos);
             for (long i = 1; i <= numeroPontos; i++) {
                 x = Math.random();
                 y = Math.random();
                 if (x * x + y * y <= 1)
                     nSuccess++;
             }
+            System.out.println(nSuccess);
             return (4.0 * nSuccess / numeroPontos);
         }
 
@@ -137,10 +146,12 @@ public class Pi {
 
         public Master(
                 final int nrOfWorkers,
+                int nrOfMessages,
                 int numeroPontos,
                 ActorRef listener) {
 
             this.nrOfWorkers = nrOfWorkers;
+            this.nrOfMessages = nrOfMessages;
             this.numeroPontos = numeroPontos;
             this.listener = listener;
 
@@ -189,6 +200,7 @@ public class Pi {
 
     public void calculate(
             final int nrOfWorkers,
+            final int nrOfMessages,
             final int numeroPontos) {
 
 
@@ -220,7 +232,7 @@ public class Pi {
         ActorRef listener = system.actorOf(Props.create(Listener.class), "listener");
 
         // create the master
-        ActorRef master = system.actorOf(Props.create(Master.class, nrOfWorkers, numeroPontos, listener), "master");
+        ActorRef master = system.actorOf(Props.create(Master.class, nrOfWorkers, nrOfMessages, numeroPontos, listener), "master");
 
 
         // start the calculation
